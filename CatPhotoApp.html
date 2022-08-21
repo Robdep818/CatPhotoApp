@@ -1,9 +1,15 @@
-<h1>CatPhotoApp</h1>
-
-  <main>
-    <section>
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8">
+  <title>CatPhotoApp</title>
+</head>
+  <body>
+    <h1>CatPhotoApp</h1>
+    <main>
+      <section>
         <h2>Cat Photos</h2>
-<!--TODO: Add link to cat photos-->
+        <!--TODO: Add link to cat photos-->
           <p>Click here to view more <a href="https://freecatphotoapp.com">cat photos.</a></p>
           <a href="https://freecatphotoapp.com" target="_blank">cat photos</a>
           <figure>
@@ -24,12 +30,16 @@
     </section>
       <h2>Cat Form</h2>
         <form action="https://freecatphotoapp.com/submit-cat-photo">
-            <fieldset>
-                <legend>Is your cat an indoor or outdoor cat?</legend> 
-                  <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
-                <legend>Is your cat an indoor or outdoor cat?</legend> 
-                 <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
-              </fieldset>
+          <fieldset>
+             <legend>Is your cat an indoor or outdoor cat?</legend>
+             <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+             <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+          </fieldset>
+          <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <input id="loving" type="checkbox" name="personality" value="loving"> <label for="loving" checked>Loving</label>
+            <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy" >Lazy</label>
+            <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic" > Energetic</label>
             <input type="text" name="catphotourl" placeholder="cat photo URL" required>
             <button type="submit">Submit</button>
         </form>
@@ -45,3 +55,6 @@
         <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
     </figure> 
   </main>
+    <footer>
+      <p>No Copyright - No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+    </footer>
